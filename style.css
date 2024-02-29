@@ -1,0 +1,76 @@
+.nav-item.dropdown:hover .dropdown-menu-sub {
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    /* Navbarı yatay eksende ortalar */
+    align-items: center;
+    /* Navbarı dikey eksende ortalar */
+    background-color: white;
+    padding: 20px;
+    margin: 12px;
+}
+
+.navbar p {
+    color: rgb(60, 60, 60);
+    text-decoration: none;
+    margin: 0 12px;
+    /* Linkler arasında boşluk bırakır */
+    font-weight: bold;
+}
+
+.signin-link {
+    display: inline-flex;
+    /* Metni ve SVG'yi yatayda hizala */
+    align-items: center;
+    /* Dikeyde ortala */
+    text-decoration: none;
+    /* Linkin altını çizme */
+    color: #ff6d29;
+    /* Metin rengi */
+    font-weight: bold;
+    /* Metin kalınlığı */
+    margin-right: 10px;
+}
+
+.signin-link svg {
+    width: 30px;
+    /* SVG genişliğini ayarla */
+    height: 20px;
+    /* SVG yüksekliğini ayarla */
+    margin-right: 5px;
+    /* SVG ile metin arasında boşluk bırak */
+}
+
+.svg-icon {
+    width: 20px;
+    /* SVG'nin genişliği */
+    height: 20px;
+    /* SVG'nin yüksekliği */
+}
+
+.custom-btn {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    background-color: #ff6d29;
+    /* Kutu rengi turuncu */
+    border-radius: 20px;
+    /* Kenarları yuvarlaklaştır */
+    border: none;
+    height: 40px;
+    width: 140px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.custom-btn:hover {
+    box-shadow: 4px 4px 10px rgb(239, 147, 127);
+    /* Üzerine gelindiğinde daha belirgin bir gölgelendirme */
+}
+
+.sign-in {
+    margin-right: 80px;
+}
