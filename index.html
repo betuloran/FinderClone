@@ -12,95 +12,147 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg">
-        <img style="height: 35px; margin-left:60px;" src="/FinderSite/logo-dark (1).svg" alt="">
+    <!-- navbar start -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <img style="height: 35px; margin-left:60px;" src="/FinderSite/images/logo-dark (1).svg" alt="">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <p style="margin-left: 30px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Demos
-                    </p>
-                    <div class="dropdown-menu  dropdown-menu-sub" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Real estate demo</a>
-                        <a class="dropdown-item" href="#">car finder demo</a>
-                        <a class="dropdown-item" href="#">job board demo</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <p class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Home
-                    </p>
-                    <div class="dropdown-menu  dropdown-menu-sub" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Homepage v.1</a>
-                        <a class="dropdown-item" href="#">Homepage v.2</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <p style="margin-left: 30px;" class="nav-link dropdown-toggle" href="#"
+                            id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Demos
+                        </p>
+                        <div class="dropdown-menu  dropdown-menu-sub" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Real estate demo</a>
+                            <a class="dropdown-item" href="#">car finder demo</a>
+                            <a class="dropdown-item" href="#">job board demo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <p class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Home
+                        </p>
+                        <div class="dropdown-menu  dropdown-menu-sub" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Homepage v.1</a>
+                            <a class="dropdown-item" href="#">Homepage v.2</a>
 
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <p class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Catalog
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <p class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Catalog
+                        </p>
+                        <div class="dropdown-menu  dropdown-menu-sub" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">gird with filters</a>
+                            <a class="dropdown-item" href="#">single place - Gallery</a>
+                            <a class="dropdown-item" href="#">single place - Info</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <p class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Account
+                        </p>
+                        <div class="dropdown-menu  dropdown-menu-sub" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Personel Info</a>
+                            <a class="dropdown-item" href="#">Favorites</a>
+                            <a class="dropdown-item" href="#">Reviews</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <p class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Vendor
+                        </p>
+                        <div class="dropdown-menu  dropdown-menu-sub" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Add Business</a>
+                            <a class="dropdown-item" href="#">Business Promotion</a>
+                            <a class="dropdown-item" href="#">My Businesses</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <p class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pages
+                        </p>
+                        <div class="dropdown-menu  dropdown-menu-sub" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">About</a>
+                            <a class="dropdown-item" href="#">Blog</a>
+                            <a class="dropdown-item" href="#">Contacts</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sign-in">
+                <a href="" class="signin-link">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 500 500"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#ff6c0a"
+                            d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                    </svg>
+                    <span>Sign in</span>
+                </a>
+                <button class="custom-btn" type="submit"><strong>+ AddBusiness</strong></button>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar finish -->
+
+    <!-- header start -->
+    <div class="welcome-page py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="display-2">
+                        <strong> Start exploring </strong>
+                    </h1>
+                    <p class="lead">
+                        Find great places to stay, eat, shop, or visit from our partners and local experts.
                     </p>
-                    <div class="dropdown-menu  dropdown-menu-sub" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">gird with filters</a>
-                        <a class="dropdown-item" href="#">single place - Gallery</a>
-                        <a class="dropdown-item" href="#">single place - Info</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <p class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Account
-                    </p>
-                    <div class="dropdown-menu  dropdown-menu-sub" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Personel Info</a>
-                        <a class="dropdown-item" href="#">Favorites</a>
-                        <a class="dropdown-item" href="#">Reviews</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <p class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Vendor
-                    </p>
-                    <div class="dropdown-menu  dropdown-menu-sub" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Add Business</a>
-                        <a class="dropdown-item" href="#">Business Promotion</a>
-                        <a class="dropdown-item" href="#">My Businesses</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <p class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Pages
-                    </p>
-                    <div class="dropdown-menu  dropdown-menu-sub" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">About</a>
-                        <a class="dropdown-item" href="#">Blog</a>
-                        <a class="dropdown-item" href="#">Contacts</a>
-                    </div>
-                </li>
-            </ul>
+
+                    <a href="#" class="btn rounded-pill"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="#f4f5f6"
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>What are you looking for?</a>
+
+
+                </div>
+                <div class="header-img col-6">
+                    <img src="/FinderSite/images/hero-img.jpg" alt="">
+                </div>
+            </div>
         </div>
-        <div class="sign-in">
-            <a href="" class="signin-link">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 500 500"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path fill="#ff6c0a"
-                        d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
-                </svg>
-                <span>Sign in</span>
-            </a>
-            <button class="custom-btn" type="submit"><strong>+ AddBusiness</strong></button>
-        </div>
-    </nav>
+    </div> <!--header end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

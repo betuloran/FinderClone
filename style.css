@@ -29,26 +29,20 @@
     text-decoration: none;
     /* Linkin altını çizme */
     color: #ff6d29;
-    /* Metin rengi */
     font-weight: bold;
-    /* Metin kalınlığı */
     margin-right: 10px;
 }
 
 .signin-link svg {
     width: 30px;
-    /* SVG genişliğini ayarla */
     height: 20px;
-    /* SVG yüksekliğini ayarla */
     margin-right: 5px;
     /* SVG ile metin arasında boşluk bırak */
 }
 
 .svg-icon {
     width: 20px;
-    /* SVG'nin genişliği */
     height: 20px;
-    /* SVG'nin yüksekliği */
 }
 
 .custom-btn {
@@ -56,7 +50,6 @@
     align-items: center;
     color: white;
     background-color: #ff6d29;
-    /* Kutu rengi turuncu */
     border-radius: 20px;
     /* Kenarları yuvarlaklaştır */
     border: none;
@@ -73,4 +66,19 @@
 
 .sign-in {
     margin-right: 80px;
+}
+
+.header-img img {
+    width: 750px;
+    height: 600px;
+    margin-right: 80px;
+}
+
+.welcome-page svg {
+    width: 20px;
+    color: rgb(221, 216, 216);
+}
+
+.welcome-page a {
+    color: rgb(221, 216, 216);
 }
