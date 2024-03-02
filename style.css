@@ -10,7 +10,7 @@
     /* Navbarı dikey eksende ortalar */
     background-color: white;
     padding: 20px;
-    margin: 12px;
+
 }
 
 .navbar p {
@@ -68,17 +68,102 @@
     margin-right: 80px;
 }
 
-.header-img img {
-    width: 750px;
-    height: 600px;
+.welcome-page-img img {
+    width: 670px;
+    height: 520px;
     margin-right: 80px;
 }
 
-.welcome-page svg {
-    width: 20px;
-    color: rgb(221, 216, 216);
+.welcome-page-button svg {
+    width: 18px;
+    color: grey;
+    margin-right: 8px;
+
 }
 
-.welcome-page a {
-    color: rgb(221, 216, 216);
+.welcome-page-form {
+    display: flex;
+    align-items: center;
+}
+
+.welcome-page-input {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.welcome-page-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.options {
+    color: rgb(20, 20, 20);
+    background-color: white;
+    border-radius: 50px;
+    /* Kenarları yuvarlaklaştır */
+    height: 55px;
+    width: 160px;
+    margin: 0 15px;
+    font-size: 15px;
+    border: 1px solid #efeaea;
+    /* Kenarlık oluştur */
+    box-shadow: 2px 2px 5px rgba(239, 235, 235, 0.967);
+    /* Varsayılan gölge */
+    transition: box-shadow 0.3s;
+    /* Geçiş efekti */
+}
+
+.options:hover {
+    box-shadow: 0px 0px 5px rgba(139, 137, 137, 0.919);
+    /* Kenarlara gölge ekle */
+}
+
+.fourth-part svg {
+    width: 18px;
+    margin-left: 10px;
+}
+
+.fourth-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #222b40;
+    width: 100%;
+    /* Footer'ın genişliğini %100 yapar */
+
 }
