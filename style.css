@@ -143,6 +143,9 @@ a {
 
 }
 
+.app-part{
+    background-color: #d3a9fe;
+}
 
 
 
@@ -158,7 +161,21 @@ a {
 
 
 
+.lunapark-part img{
+    width: 600px;
+    height: 350px;
+border-radius: 20px;
+}
 
+.app-part{
+    width: 100px;
+    height: 350px;  
+}
+
+.app-store{
+    width: 20px;
+    height: 20px;
+}
 
 
 .footer {
