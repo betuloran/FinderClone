@@ -13,6 +13,16 @@
 
 }
 
+.btn-market {
+    border-radius: 7px;
+    background-color: #313a50;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar p {
     color: rgb(60, 60, 60);
     text-decoration: none;
@@ -128,46 +138,89 @@
     /* Kenarlara gölge ekle */
 }
 
-.fourth-part svg {
+.fourth-part svg,
+.six-part svg {
     width: 18px;
     margin-left: 10px;
 }
 
-.fourth-right {
+.fourth-right,
+.six-right {
     display: flex;
     justify-content: flex-end;
 }
+
+.five-part-left {
+    background-color: #f4e9f9;
+    border-radius: 20px;
+
+}
+
+.six-button {
+    border-radius: 20px;
+    width: 120px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 5px;
+    background-color: rgb(252, 251, 251);
+    height: 30px;
+}
+
+.six-button:hover {
+    box-shadow: 4px 4px 10px rgb(212, 207, 206);
+    /* Üzerine gelindiğinde daha belirgin bir gölgelendirme */
+}
+
 
 a {
     text-decoration: none !important;
 
 }
 
-.app-part {
-    background-color: #d3a9fe;
+
+.eight-part {
+    background-color: #f4e9f9;
+    border-radius: 10px;
+
+}
+
+.eight-part img {
+    width: 600px;
+    height: 300px;
 }
 
 
 .lunapark-part img {
     width: 600px;
     height: 350px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-.app-part {
-    width: 100px;
-    height: 350px;
+.five-part-right img {
+    margin-left: 20px;
+    border-radius: 10px;
 }
 
-.app-store {
-    width: 20px;
-    height: 20px;
+.carousel-inner img {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 300px;
+    border-radius: 10px;
 }
-
 
 .footer {
-    background-color: #222b40;
+    background-color: #374361;
     width: 100%;
-    /* Footer'ın genişliğini %100 yapar */
+    padding: 0;
+    margin: 0;
+}
 
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
