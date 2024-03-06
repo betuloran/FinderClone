@@ -58,6 +58,7 @@
 .custom-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     color: white;
     background-color: #ff6d29;
     border-radius: 20px;
@@ -172,6 +173,18 @@
     /* Üzerine gelindiğinde daha belirgin bir gölgelendirme */
 }
 
+.carousel-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Gri ton ekleme */
+.carousel-item-left,
+.carousel-item-right {
+    opacity: 0.5;
+    /* Opaklık ayarı */
+}
 
 a {
     text-decoration: none !important;
@@ -212,15 +225,14 @@ a {
 
 .footer {
     background-color: #374361;
-    width: 100%;
     padding: 0;
     margin: 0;
 }
 
-.container {
+.footer .container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 0;
+    margin-left: 0;
 }
