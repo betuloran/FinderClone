@@ -1,3 +1,4 @@
+
 .nav-item.dropdown:hover .dropdown-menu-sub {
     display: block;
 }
@@ -10,8 +11,93 @@
     /* Navbarı dikey eksende ortalar */
     background-color: white;
     padding: 20px;
-
 }
+
+.navbar p {
+    color: rgb(60, 60, 60);
+    text-decoration: none;
+    margin: 0 12px;
+    /* Linkler arasında boşluk bırakır */
+    font-weight: bold;
+}
+
+/* welcome page start */
+.welcome-page-form {
+    display: flex;
+    align-items: center;
+}
+
+.welcome-page-img img {
+    width: 670px;
+    height: 520px;
+    margin-right: 80px;
+}
+
+.welcome-page-input {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.welcome-page-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+/* welcome page finish */
+
+/* buttons start */
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.options {
+    color: rgb(20, 20, 20);
+    background-color: white;
+    border-radius: 50px;
+    /* Kenarları yuvarlaklaştır */
+    height: 55px;
+    width: 160px;
+    margin: 0 15px;
+    font-size: 15px;
+    border: 1px solid #efeaea;
+    /* Kenarlık oluştur */
+    box-shadow: 2px 2px 5px rgba(239, 235, 235, 0.967);
+    /* Varsayılan gölge */
+    transition: box-shadow 0.3s;
+    /* Geçiş efekti */
+}
+
+.options:hover {
+    box-shadow: 0px 0px 5px rgba(139, 137, 137, 0.919);/* Kenarlara gölge ekle */
+}
+/* buttons finish */
+
+/* carousel */
+.carousel-inner img {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Gri ton ekleme */
+.carousel-item-left,
+.carousel-item-right {
+    opacity: 0.5;
+    /* Opaklık ayarı */
+}
+/* carousel */
 
 .btn-market {
     border-radius: 7px;
@@ -21,14 +107,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.navbar p {
-    color: rgb(60, 60, 60);
-    text-decoration: none;
-    margin: 0 12px;
-    /* Linkler arasında boşluk bırakır */
-    font-weight: bold;
 }
 
 .signin-link {
@@ -79,87 +157,35 @@
     margin-right: 80px;
 }
 
-.welcome-page-img img {
-    width: 670px;
-    height: 520px;
-    margin-right: 80px;
-}
 
-.welcome-page-button svg {
-    width: 18px;
-    color: grey;
-    margin-right: 8px;
-
-}
-
-.welcome-page-form {
-    display: flex;
-    align-items: center;
-}
-
-.welcome-page-input {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-}
-
-.welcome-page-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
-
-
-.buttons {
-    display: flex;
-    justify-content: center;
-}
-
-.options {
-    color: rgb(20, 20, 20);
-    background-color: white;
-    border-radius: 50px;
-    /* Kenarları yuvarlaklaştır */
-    height: 55px;
-    width: 160px;
-    margin: 0 15px;
-    font-size: 15px;
-    border: 1px solid #efeaea;
-    /* Kenarlık oluştur */
-    box-shadow: 2px 2px 5px rgba(239, 235, 235, 0.967);
-    /* Varsayılan gölge */
-    transition: box-shadow 0.3s;
-    /* Geçiş efekti */
-}
-
-.options:hover {
-    box-shadow: 0px 0px 5px rgba(139, 137, 137, 0.919);
-    /* Kenarlara gölge ekle */
-}
-
-.fourth-part svg,
-.six-part svg {
+.five-part svg,
+.seven-part svg {
     width: 18px;
     margin-left: 10px;
 }
 
-.fourth-right,
-.six-right {
+.five-right,
+.seven-right {
     display: flex;
     justify-content: flex-end;
 }
 
-.five-part-left {
+.six-part-left {
     background-color: #f4e9f9;
     border-radius: 20px;
-
 }
 
-.six-button {
+.six-part-right i{
+    margin-right: 5px;
+}
+
+.eats{
+font-size: 14px;
+}
+
+.seven-button {
     border-radius: 20px;
-    width: 120px;
+    width: 145px;
     border: none;
     padding: 0;
     cursor: pointer;
@@ -168,22 +194,9 @@
     height: 30px;
 }
 
-.six-button:hover {
+.seven-button:hover {
     box-shadow: 4px 4px 10px rgb(212, 207, 206);
     /* Üzerine gelindiğinde daha belirgin bir gölgelendirme */
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-/* Gri ton ekleme */
-.carousel-item-left,
-.carousel-item-right {
-    opacity: 0.5;
-    /* Opaklık ayarı */
 }
 
 a {
@@ -191,11 +204,9 @@ a {
 
 }
 
-
 .eight-part {
     background-color: #f4e9f9;
     border-radius: 10px;
-
 }
 
 .eight-part img {
@@ -203,28 +214,32 @@ a {
     height: 300px;
 }
 
-
 .lunapark-part img {
     width: 600px;
     height: 350px;
     border-radius: 10px;
 }
 
-.five-part-right img {
+.six-part-right img {
     margin-left: 20px;
     border-radius: 10px;
 }
 
-.carousel-inner img {
-    display: flex;
-    justify-content: center;
-    width: 1000px;
-    height: 300px;
-    border-radius: 10px;
+.nav-link-light{
+    color: white;
+}
+
+.tns-complete{
+    height: 190px;
+    width: 410px;
+}
+
+.status{
+    font-size: 13px;
 }
 
 .footer {
-    background-color: #374361;
+    background-color: #303a53;
     padding: 0;
     margin: 0;
 }
@@ -236,3 +251,4 @@ a {
     margin-right: 0;
     margin-left: 0;
 }
+
