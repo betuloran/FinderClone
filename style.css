@@ -193,19 +193,27 @@
 }
 
 .seven-button {
-    border-radius: 20px;
-    width: 145px;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    margin: 5px;
-    background-color: rgb(252, 251, 251);
-    height: 30px;
+    color: rgb(20, 20, 20);
+    background-color: rgb(241, 241, 241);
+    border-radius: 40px;
+    /* Kenarları yuvarlaklaştır */
+    height: 36px;
+    width: 114px;
+    margin: 0 10px;
+    font-size: 15px;
+    border: 1px solid #efeaea;
+    /* Kenarlık oluştur */
+    box-shadow: 2px 2px 8px rgba(206, 204, 204, 0.967);
+    /* Varsayılan gölge */
+    transition: box-shadow 0.3s;
+    /* Geçiş efekti */
+    display: flex;
+    justify-content: center;
 }
 
 .seven-button:hover {
-    box-shadow: 4px 4px 10px rgb(212, 207, 206);
-    /* Üzerine gelindiğinde daha belirgin bir gölgelendirme */
+    box-shadow: 0px 0px 5px rgba(86, 83, 83, 0.919);
+    /* Kenarlara gölge ekle */
 }
 
 a {

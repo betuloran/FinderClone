@@ -239,11 +239,13 @@
                     <div class="col-md-4 six-part-left">
                         <div class="row" style="margin-top: 20px;">
                             <div>
-                                <h3 style="color: #ff6d29; display: inline;"><strong>Taxi</strong>
+                                <h3 style="color: #ff6d29; display: inline; font-size: 35px; margin-left: 20px;">
+                                    <strong>Taxi</strong>
                                 </h3>
-                                <h3 style="display: inline;"><strong>488</strong> </h3>
-                                <p style="color: #7c7f85; font-size: large; margin-top: 20px;">The best way to get
-                                    wherever you're going!</p>
+                                <h3 style="display: inline; font-size: 35px;"><strong>488</strong> </h3>
+                                <p style="color: #7c7f85; font-size: large; margin-top: 20px; margin-left: 20px;">The
+                                    best way to get
+                                    wherever <br> you're going!</p>
                             </div>
                             <div>
                                 <img src="images/taxi.svg" alt="">
@@ -385,10 +387,13 @@
                     <div class="carousel-item active">
                         <img src="images/match.webp" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <p<i class="fa-solid fa-calendar-days" style="color: #c9cbcf;"></i>>No 11</p>
-                                <p<i class="fa-regular fa-clock" style="color:#c9cbcf;"></i>18:00</p>
-                                    <h5>Football Match</h5>
-                                    <button class="custom-btn" type="submit"><strong>Tickets from $40</strong></button>
+                            <div style="float: left;">
+                                <p<i class="fa-solid fa-calendar-days" style="color: #c9cbcf;"></i>No 11</p>
+                                    <p<i class="fa-regular fa-clock" style="color:#c9cbcf;"></i>18:00</p>
+                                        <h6>Football Match</h6>
+                            </div>
+                            <button class="custom-btn" style="float: right;" type="submit"><strong>Tickets from
+                                    $40</strong></button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -396,7 +401,7 @@
                         <div class="carousel-caption d-none d-md-block">
                             <p><i class="fa-solid fa-calendar-days" style="color: #c9cbcf;"></i>Dec 2</p>
                             <p<i class="fa-regular fa-clock" style="color:#c9cbcf;"></i>10:00</p>
-                                <h5>Holi Festival</h5>
+                                <h6>Holi Festival</h6>
                                 <button class="custom-btn" type="submit"><strong>Tickets from $35</strong></button>
                         </div>
                     </div>
@@ -405,7 +410,7 @@
                         <div class="carousel-caption d-none d-md-block">
                             <p<i class="fa-solid fa-calendar-days" style="color: #c9cbcf;"></i>>Nov 15</p>
                                 <p<i class="fa-regular fa-clock" style="color:#c9cbcf;"></i>21:00</p>
-                                    <h5>Simon Rock Concert</h5>
+                                    <h6>Simon Rock Concert</h6>
                                     <button class="custom-btn" type="submit"><strong>Tickets from $50</strong></button>
                         </div>
                     </div>
@@ -637,26 +642,24 @@
                             </ul>
                         </div>
                         <!-- Subscription form-->
-                        <div class="col-lg-4 offset-lg-1">
+                        <div class="col-lg-4 offset-lg-1 mb-5">
                             <h5 class=" text-light"><b>Subscribe to our newsletter</b></h5>
                             <p style="color: rgb(201, 142, 142);" class="fs-sm mb-4 opacity-60">Don’t miss any
                                 relevant
                                 vacancies!</p>
                             <form class="form-group form-group-light rounded-pill" style="max-width: 500px;">
                                 <div class="input-group input-group-sm"><span class="input-group-text text-muted"><i
-                                            class="fi-mail"></i></span>
+                                            class="fi-mail"></i><button class="custom-btn rounded-pill mt-2"
+                                            style="width: 90px;" type="button">Subscribe</button></span>
                                     <input class="form-control" type="email" placeholder="Your email">
                                 </div>
-                                <button class="custom-btn rounded-pill mt-2" style="width: 90px;"
-                                    type="button">Subscribe</button>
-                            </form>
 
+                            </form>
                         </div>
 
-                        <div class="py-4 border-top border-light">
+                        <div class="py-2 border-top border-light">
                             <div
-                                class=" d-flex flex-column flex-lg-row align-items-center justify-content-between py-2">
-                                <!-- Copyright-->
+                                class=" d-flex flex-column flex-lg-row align-items-center justify-content-between py-1">
                                 <p class="order-lg-1 order-2 fs-sm mb-2 mb-lg-0"><span class="text-light opacity-60">©
                                         All
                                         rights reserved. Made by </span><a class="nav-link-light fw-bold"
@@ -665,7 +668,6 @@
                                 </p>
                                 <div
                                     class="d-flex flex-lg-row flex-column align-items-center order-lg-2 order-1 ms-lg-4 mb-lg-0 mb-4">
-                                    <!-- Links-->
                                     <div class="d-flex flex-wrap fs-sm mb-lg-0 mb-4 pe-lg-4"><a
                                             class="nav-link-light px-2 mx-1" href="#">About</a><a
                                             class="nav-link-light px-2 mx-1" href="#">Blog</a><a
@@ -673,7 +675,6 @@
                                             class="nav-link-light px-2 mx-1" href="#">Contacts</a>
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <!-- Language switcher-->
                                         <div class="dropdown">
                                             <a class="nav-link nav-link-light dropdown-toggle fs-sm align-items-center p-0 fw-normal"
                                                 style="color: white;" href="#" id="langSwitcher"
@@ -695,7 +696,6 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <!-- Socials-->
                                         <div class="ms-4 ps-lg-2 text-nowrap"><a
                                                 class="btn btn-icon btn-translucent-light btn-xs rounded-circle ms-2"
                                                 href="#"><i class="fa-brands fa-facebook"
