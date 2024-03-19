@@ -1,35 +1,38 @@
-.nav-item.dropdown:hover .dropdown-menu-sub {
-    display: block;
-}
+.navbar{
+        display: flex;
+        justify-content: center;
+        /* Navbarı yatay eksende ortalar */
+        align-items: center;
+        /* Navbarı dikey eksende ortalar */
+        background-color: white;
+        padding: 20px;
+    }
 
-.navbar {
+
+.menu{
     display: flex;
     justify-content: center;
-    /* Navbarı yatay eksende ortalar */
     align-items: center;
-    /* Navbarı dikey eksende ortalar */
-    background-color: white;
-    padding: 20px;
 }
-
-.navbar p {
-    color: rgb(60, 60, 60);
-    text-decoration: none;
-    margin: 0 12px;
-    /* Linkler arasında boşluk bırakır */
-    font-weight: bold;
-}
-
-/* welcome page start */
+/*  page start */
 .welcome-page-form {
     display: flex;
     align-items: center;
 }
 
 .welcome-page-img img {
-    width: 670px;
-    height: 520px;
-    margin-right: 80px;
+    max-width: 100%;
+    height: 490px;
+    vertical-align: middle;
+
+}
+
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.d-block {
+    display: block !important;
 }
 
 .welcome-page-input {
@@ -39,14 +42,26 @@
     border-radius: 20px;
 }
 
-.welcome-page-button {
-    background: none;
-    border: none;
-    padding: 0;
+.search-button {
+    border-radius: 50px;
+    border:#a5a3a3;
+    width:600px;
+    height:70px;
     cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(149, 148, 148, 0.967);
 }
 
-/* welcome page finish */
+.search-button button{
+    float: right;
+
+}
+
+.search-button {
+ text-align: left;
+
+}
+
+/*  page finish */
 
 /* buttons start */
 .buttons {
@@ -55,26 +70,79 @@
 }
 
 .options {
-    color: rgb(20, 20, 20);
+    color:#1f1b2d ;
     background-color: white;
     border-radius: 50px;
     /* Kenarları yuvarlaklaştır */
-    height: 55px;
-    width: 160px;
+    height: 58px;
+    width: max-content;
     margin: 0 15px;
-    font-size: 15px;
-    border: 1px solid #efeaea;
+    font-size: 14px;
+    border: 1px solid #ffffff;
     /* Kenarlık oluştur */
-    box-shadow: 2px 2px 5px rgba(239, 235, 235, 0.967);
+    box-shadow: 1px 1px 5px rgba(231, 228, 228, 0.967);
     /* Varsayılan gölge */
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.2s;
+    font-family: "Noto Sans", sans-serif;
     /* Geçiş efekti */
 }
 
+.icons{
+    display: block;
+    width: 1rem;
+    min-width: 3rem;
+    height: 3rem;
+    transition: background-color .22s ease-in-out, color .22s ease-in-out;
+    border-radius: 0.5rem;
+    background-position: center;
+    background-size: cover;
+    font-size: 1.2rem;
+    line-height: 2.75rem;
+    text-align: center;
+}
+
+
+.bg-faded-accent {
+    background-color: rgba(93, 60, 242, .1) !important;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.text-accent {
+    color: #5d3cf2 !important;
+}
+
+.where-stay-item {
+    display: flex; /* Flex konteynırı olarak ayarla */
+    justify-content: center;
+    align-items: center;
+}
+
+.where-stay-box h5{
+margin-top: 10px;
+font-size: 19px;
+color: #3b3749;
+}
+
+.where-stay-box {
+    flex: 1; /* Eşit genişlikte olmasını sağlar */
+    margin: 5px; /* İstenilen kenar boşluğunu belirle */
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+
+.icons:hover{
+    background-color: rgba(62, 39, 164, 0.1);
+}
+
 .options:hover {
-    box-shadow: 0px 0px 5px rgba(139, 137, 137, 0.919);
+    box-shadow:2px 2px 10px rgba(205, 202, 202, 0.919);
     /* Kenarlara gölge ekle */
 }
+
+
 
 /* buttons finish */
 
@@ -125,8 +193,8 @@
 }
 
 .signin-link svg {
-    width: 30px;
-    height: 20px;
+    width: 20px;
+    height: 15px;
     margin-right: 5px;
     /* SVG ile metin arasında boşluk bırak */
 }
@@ -141,14 +209,9 @@
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: #ff6d29;
+    background-color: #fd390e;
     border-radius: 20px;
-    /* Kenarları yuvarlaklaştır */
     border: none;
-    height: 40px;
-    width: 140px;
-    margin: 10px;
-    font-size: 15px;
 }
 
 .custom-btn:hover {
@@ -156,8 +219,62 @@
     /* Üzerine gelindiğinde daha belirgin bir gölgelendirme */
 }
 
-.sign-in {
-    margin-right: 80px;
+.sign-in{
+  font-family: "Noto Sans", sans-serif;
+}
+
+.sign-in button {
+    height: 38px;
+    width: 145px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.custom-btn i{
+    color:white; 
+    font-size:30px; 
+    margin-bottom:11px;
+    margin-right: 5px;
+}
+
+
+.sub-menu{
+    border: solid 1px #e6e4e4;
+    border-radius: 12px;
+    width: max-content;
+    padding: 14px;
+    opacity: 0;
+    transition: linear .2s all;
+    position: absolute;
+    bottom: -90px;
+    box-shadow: 0px 0px 5px 3px rgba(230, 226, 226, 0.5); /* Gölge rengi ve boyutu */
+}
+
+.menu:hover .sub-menu{
+opacity: 1;
+transition: linear .2s all;
+bottom: -100px;
+}
+
+.menu .sub-menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+
+.menu .sub-menu ul li{
+    list-style-type: none;
+    color: #333;
+    transition: linear .2s all;
+}
+
+.menu .sub-menu ul li:hover{
+    color: #fd5631;
+    transition: linear .2s all; 
+    cursor: pointer;
 }
 
 
@@ -191,6 +308,39 @@
     margin-bottom: 2px;
     font-size: 13px;
 }
+
+.where-stay-box p{
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 13px;
+    margin-right: 16px;
+    color: #666276;
+    user-select: none;
+}
+
+.where-stay-box i{
+    margin-right: 5px;
+}
+
+.custom-button {
+    padding: 5px 2px;
+    background-color: #ffffff; /* Beyaz arka plan */
+    color: #333333; /* Yazı rengi */
+    border: 2px solid #eaeaea; /* Kenarlık */
+    border-radius: 5px; /* Köşe yuvarlama */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Geçiş efekti */
+    margin-left: ;
+}
+
+.custom-button i{
+    margin-left: 5px;
+}
+
+.custom-button:hover {
+    background-color: rgb(254, 75, 20); /* Hover durumunda arka plan rengi */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Hafif gölge */
+}
+
 
 .seven-button {
     color: rgb(20, 20, 20);
