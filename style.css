@@ -5,14 +5,13 @@
     align-items: center;
     /* Navbarı dikey eksende ortalar */
     background-color: white;
-    padding: 20px;
 }
 
 
 .menu {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 /*  page start */
@@ -22,10 +21,12 @@
 }
 
 .welcome-page-img img {
-    max-width: 100%;
-    height: 490px;
-    vertical-align: middle;
+    width: 750px;
 
+}
+
+.footer a {
+    font-family: "Noto Sans", sans-serif;
 }
 
 .mx-auto {
@@ -44,17 +45,22 @@
     border-radius: 20px;
 }
 
-.form-group {
+.upcoming-carousel {
     display: flex;
-    align-items: center;
-    padding: .5rem;
-    border: 1px solid #efecf3;
-    border-radius: 10rem;
-    background-color: #fff;
-    box-shadow: 0 0.125rem 0.125rem -0.125rem rgba(31,27,45,.08), 0 0.25rem 0.75rem rgba(31,27,45,.08);
+    justify-content: center;
 }
 
 
+.form-group {
+    display: flex;
+    align-items: center;
+    width: 640px;
+    height: 70px;
+    border: 1px solid #eae7ed;
+    border-radius: 10rem;
+    background-color: white;
+    box-shadow: 0 0.125rem 0.125rem -0.125rem rgba(31, 27, 45, .08), 0 0.25rem 0.75rem rgba(31, 27, 45, .08);
+}
 
 .search-button {
     border-radius: 50px;
@@ -90,8 +96,7 @@
     /* Kenarları yuvarlaklaştır */
     height: 58px;
     width: max-content;
-    margin: 0 15px;
-    font-size: 14px;
+    margin: 0 13px;
     border: 1px solid #ffffff;
     /* Kenarlık oluştur */
     box-shadow: 1px 1px 5px rgba(231, 228, 228, 0.967);
@@ -99,34 +104,31 @@
     transition: box-shadow 0.2s;
     font-family: "Noto Sans", sans-serif;
     /* Geçiş efekti */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options h3 {
+    margin-right: 5px;
+}
+
+.icon-box-title {
+    font-size: 14px;
+    display: inline;
+
 }
 
 .icons {
-    display: block;
-    width: 1rem;
-    min-width: 3rem;
-    height: 3rem;
-    transition: background-color .22s ease-in-out, color .22s ease-in-out;
+    padding: 8px 14px;
     border-radius: 0.5rem;
     background-position: center;
     background-size: cover;
-    font-size: 1.2rem;
-    line-height: 2.75rem;
+    font-size: 21px;
     text-align: center;
+    margin-left: 10px;
 }
 
-
-.bg-faded-accent {
-    background-color: rgba(93, 60, 242, .1) !important;
-}
-
-.rounded-circle {
-    border-radius: 50% !important;
-}
-
-.text-accent {
-    color: #5d3cf2 !important;
-}
 
 .where-stay-item {
     display: flex;
@@ -139,6 +141,12 @@
     margin-top: 10px;
     font-size: 19px;
     color: #3b3749;
+    transition: linear .2s color;
+}
+
+.where-stay-box h5:hover {
+    color: #fd390e;
+    transition: linear .2s color;
 }
 
 .where-stay-box {
@@ -150,16 +158,10 @@
     padding: 10px;
 }
 
-
-.icons:hover {
-    background-color: rgba(62, 39, 164, 0.1);
-}
-
 .options:hover {
-    box-shadow: 2px 2px 10px rgba(205, 202, 202, 0.919);
+    box-shadow: 1px 2px 6px rgba(205, 202, 202, 0.919);
     /* Kenarlara gölge ekle */
 }
-
 
 /* buttons finish */
 
@@ -192,11 +194,12 @@
 .btn-market {
     border-radius: 7px;
     background-color: #313a50;
-    width: 200px;
-    height: 50px;
+    width: 170px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 5px 3px rgba(43, 40, 40, 0.5);
 }
 
 .signin-link {
@@ -231,12 +234,36 @@
     background-color: #fd5631;
     border-radius: 20px;
     border: none;
+    transition: linear .1s all;
+}
+
+.footer-icon {
+    background-color: #431ecb;
 }
 
 .custom-btn:hover {
-    box-shadow: 4px 4px 5px rgb(239, 147, 127);
+    box-shadow: 1px 1px 5px rgb(239, 147, 127);
     /* Üzerine gelindiğinde daha belirgin bir gölgelendirme */
     background-color: #fd390e;
+    transition: linear .1s all;
+
+}
+
+.upcoming-btn:hover {
+    box-shadow: 2px 2px 2px rgb(239, 147, 127);
+    /* Üzerine gelindiğinde daha belirgin bir gölgelendirme */
+    background-color: #fd390e;
+}
+
+.upcoming-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #fd5631;
+    border-radius: 20px;
+    width: 220px;
+    height: 40px;
 }
 
 .upcoming-icon {
@@ -248,6 +275,7 @@
 
 .sign-in {
     font-family: "Noto Sans", sans-serif;
+    margin-left: auto;
 }
 
 .sign-in button {
@@ -259,29 +287,36 @@
 
 .custom-btn i {
     color: white;
-    font-size: 30px;
-    margin-bottom: 11px;
-    margin-right: 5px;
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-right: 6px;
 }
 
 
-.sub-menu {
+.sub-menu,
+.all-categories-sub {
     border: solid 1px #e6e4e4;
     border-radius: 12px;
     width: max-content;
     padding: 14px;
-    opacity: 0;
-    transition: linear .2s all;
+    display: none;
+    /* Elementi başlangıçta gizle */
     position: absolute;
     bottom: -90px;
     box-shadow: 0px 0px 5px 3px rgba(230, 226, 226, 0.5);
-    /* Gölge rengi ve boyutu */
+    font-size: 14px;
+}
+
+.menu .sub-menu {
+    max-height: 0;
+    overflow: hidden;
 }
 
 .menu:hover .sub-menu {
-    opacity: 1;
-    transition: linear .2s all;
-    bottom: -100px;
+    display: block;
+    /* Fare menünün üzerine geldiğinde elementi göster */
+    bottom: -60px;
+    max-height: 80px;
 }
 
 .menu .sub-menu ul {
@@ -306,6 +341,15 @@
 }
 
 
+.all-categories-item:hover {
+    color: rgb(54, 53, 53);
+    transition: linear .2s all;
+}
+
+.all-categories-item {
+    transition: linear .2s all;
+}
+
 .five-part svg,
 .seven-part svg {
     width: 18px;
@@ -319,13 +363,13 @@
 }
 
 .six-part-left {
-    background-color: #f4e9f9;
-    border-radius: 20px;
+    background-color: #e8e4f5;
+    border-radius: 14px;
 }
 
 .six-part-right i {
     margin-right: 5px;
-    
+
 }
 
 .eats img {
@@ -402,12 +446,11 @@
     margin-left: 7px;
 }
 
-.head .link-and-icon a:hover{
- color: rgb(254, 75, 20);
+.head .link-and-icon a:hover {
+    color: rgb(254, 75, 20);
 }
 
 .custom-button {
-    padding: 5px 2px;
     background-color: #ffffff;
     /* Beyaz arka plan */
     color: #333333;
@@ -418,7 +461,6 @@
     /* Köşe yuvarlama */
     transition: background-color 0.3s, box-shadow 0.3s;
     /* Geçiş efekti */
-
 }
 
 .custom-button i {
@@ -436,7 +478,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .choose-date button {
@@ -454,14 +495,12 @@
     border-radius: 40px;
     /* Kenarları yuvarlaklaştır */
     height: 36px;
-    width: 114px;
+    width: max-content;
+    padding: 13px;
     margin: 0 10px;
     font-size: 15px;
-    border: 1px solid #efeaea;
+    border: 1px solid #dddada;
     /* Kenarlık oluştur */
-    box-shadow: 2px 2px 8px rgba(206, 204, 204, 0.967);
-    /* Varsayılan gölge */
-    transition: box-shadow 0.3s;
     /* Geçiş efekti */
     display: flex;
     justify-content: center;
@@ -474,34 +513,45 @@
 
 }
 
-
-.seven-button:hover {
-    box-shadow: 0px 0px 5px rgba(86, 83, 83, 0.919);
-    /* Kenarlara gölge ekle */
+.welcome-menu-item {
+    transition: linear .2s all;
 }
 
-a{
+.welcome-menu-item:hover {
+    color: #1f1b2d;
+    transition: linear .2s all;
+
+}
+
+.seven-button:hover {
+    box-shadow: 0px 8px 15px rgba(7, 7, 7, 0.1);
+    /* Yavaş yavaş görünen gölge efekti */
+    transition: box-shadow 0.3s ease;
+    /* Geçiş efekti */
+}
+
+a {
     text-decoration: none !important;
 
 }
 
+
 .eight-part {
-    background-color: #f4e9f9;
-    border-radius: 10px;
+    background-color: #e8e4f5;
+    border-radius: 15px;
 }
 
 .eight-part img {
-    width: 600px;
-    height: 300px;
+    width: 750px;
+    height: 320px;
 }
-
 
 .lunapark-part img {
     width: 720px;
     height: 400px;
     border-radius: 10px;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
 }
 
 .six-part-right img {
@@ -512,6 +562,13 @@ a{
 .nav-link-light {
     color: white;
 }
+
+.bg-transparent {
+    background-color: rgba(255, 255, 255, 0);
+    /* Arka planı tamamen saydam yap */
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
 
 .tns-complete {
     height: 190px;
@@ -524,31 +581,17 @@ a{
 
 .footer {
     background-color: rgb(31 27 45);
-  
 }
 
-.footer-subscribe .form-control {
-    background-color: rgb(215, 138, 138);
-    border-right: none;
-}
-
-.footer-subscribe .custom-btn {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.footer-subscribe .input-group-text {
-    background-color: grey;
-    border-color: transparent;
+.footer-under {
+    border-top: 1px solid rgba(185, 185, 185, 0.303);
 }
 
 
-.nav-link-light{
+.nav-link-light {
     color: #888595;
 }
 
-
-.nav-link-light:hover{
+.nav-link-light:hover {
     color: #ffffff;
 }
-
