@@ -21,14 +21,18 @@
             <div class="menu">
                 <div class="menu-item">
                     <i class="fa-solid fa-layer-group" style="color: #0d0d0d; margin-left:40px; margin-right:3px;"></i>
-                    <strong style="font-size: 14px; color:#3d3d40 ; font-family:Noto Sans, sans-serif">Demos</strong>
+                    <p style="display: inline;"> <strong
+                            style="font-size: 14px; color:#3d3d40 ; font-family:Noto Sans, sans-serif">Demos</strong>
+                    </p>
+
                     <i class="fa-solid fa-chevron-down" style="color: #161717; font-size:9px; margin-left:3px;"></i>
                 </div>
                 <div class="sub-menu">
                     <ul>
-                        <li>Real estate demo</li>
-                        <li>Car finder demo</li>
-                        <li>Job board demo</li>
+                        <li><i class="fa-regular fa-building" style="margin:0 8px 0 4px;"></i>Real estate demo</li>
+                        <li><i class="fa-solid fa-car-side" style="margin:0 8px 0 4px;"></i>Car finder demo</li>
+                        <li><i class="fa-solid fa-briefcase" style="margin:0 8px 0 4px;"></i>Job board demo</li>
+                        <li><i class="fa-solid fa-location-dot" style="margin:0 8px 0 4px;"></i>City Guide demo</li>
                     </ul>
                 </div>
                 <span class="d-none d-lg-block end-0 translate-middle-y border-end"
@@ -128,18 +132,22 @@
             <div class="row align-items-center">
                 <article class="col-lg-5 order-lg-1 pe-lg-0 welcome-page-left" style="margin-top: 10px;">
                     <p class="display-5 mb-4 me-lg-n5 text-lg-start text-center mb-4"
-                        style="font-size: 49px;font-family:Noto Sans, sans-serif;">
-                        <strong>Start exploring</strong>
+                        style="font-size: 47px;font-weight:bold;">
+                        Start exploring
                         <span class="dropdown d-inline-block mb-0"><a class="dropdown-toggle text-decoration-none"
                                 href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" style="color:#fd390e;">
-                                <strong>Berlin</strong>
+                                aria-expanded="false" style="color:#fc4a26;font-size:47px;">
+                                Berlin
                             </a><span class="dropdown-menu dropdown-menu-end my-1"><a
-                                    class="dropdown-item fs-base fw-bold" href="#">Hamburg</a><a
-                                    class="dropdown-item fs-base fw-bold" href="#">Munich</a><a
-                                    class="dropdown-item fs-base fw-bold" href="#">Frankfurt am Main</a><a
-                                    class="dropdown-item fs-base fw-bold" href="#">Stuttgart</a><a
-                                    class="dropdown-item fs-base fw-bold" href="#">Cologne</a></span>
+                                    class="dropdown-item fs-base fw-bold" style="font-size:17px; color:#4e4d55;"
+                                    href="#">Hamburg</a><a class="dropdown-item fs-base fw-bold" href="#"
+                                    style="font-size:17px; color:#4e4d55;">Munich</a><a
+                                    class="dropdown-item fs-base fw-bold" href="#"
+                                    style="font-size:17px; color:#4e4d55;">Frankfurt am Main</a><a
+                                    class="dropdown-item fs-base fw-bold" href="#"
+                                    style="font-size:17px; color:#4e4d55;">Stuttgart</a><a
+                                    class="dropdown-item fs-base fw-bold" href="#"
+                                    style="font-size:17px; color:#4e4d55;">Cologne</a></span>
                         </span>
                     </p>
                     <p style="font-size: 19px;font-family:Noto Sans, sans-serif; color:#6b6978;" class="mb-5">
@@ -154,33 +162,49 @@
                                     style="background-color:transparent;border:none;">
                                     <!-- search icon -->
                                     <i class="fa-solid fa-magnifying-glass"
-                                        style="color: #9c9fa8; margin-left:5px; font-size:16px;"></i>
-                                    <input class="form-control"
-                                        style="background-color:transparent; border:none; font-size:17px;" type="text"
-                                        placeholder="What are you looking for?">
+                                        style="color: #9c9fa8; padding:10px; font-size:16px;"></i>
+                                    <input style="background-color:transparent; border:none; font-size:17px;"
+                                        type="text" placeholder="What are you looking for?">
                                 </div>
                                 <span class="d-none d-lg-block end-0 translate-middle-y border-end"
-                                    style="width: 1px; height:50px; margin-top:48px; margin-left:52px;"></span>
+                                    style="width: 1px; height:50px; margin-top:48px; margin-left:60px;"></span>
                             </div>
 
                             <div class="d-sm-flex">
-                                <div class="dropdown w-100 mb-sm-0 mb-3 position-relative" data-bs-toggle="select">
-                                    <div class="all-categories-menu" style="color: #94969d;">
-                                        <div class="all-categories-item" style="margin-top:13px;margin-left:15px;">
-                                            <i class="fa-solid fa-list" style="margin-right:5px;"></i>
-                                            <a style="font-size: 17px;">All categories</a>
-                                            <i class="fa-solid fa-chevron-down" style="font-size:13px;"></i>
-                                        </div>
-                                        <div>
-                                            <ul class="all-categories-sub">
-                                                <li>Homepage v.1</li>
-                                                <li>Homepage v.2</li>
-                                            </ul>
-                                        </div>
+                                <span
+                                    class="dropdown d-inline-block mb-0 d-flex justify-content-center align-items-center">
+                                    <a class="dropdown-toggle text-decoration-none " href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        style="color:#9fa6ac; margin-bottom:6px; margin-right:23px;">
+                                        <i class="fa-solid fa-list" style="margin-right:6px;font-size:17px;"></i>
+                                        <p style="font-size: 17px;display:inline;">All categories</p>
+                                    </a>
+                                    <div class="all-categories-dropdown">
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa-solid fa-bed"></i><span>Accomodation</span></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa-solid fa-utensils"></i><span>Food &
+                                                        Drink</span></a></li>
+                                            <li><a href="#"><i
+                                                        class="fa-solid fa-bag-shopping"></i><span>Shopping</span></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa-solid fa-landmark"></i><span>Art &
+                                                        History</span></a></li>
+                                            <li><a href="#"><i
+                                                        class="fa-solid fa-ticket"></i><span>Entertainment</span></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa-solid fa-pills"></i><span>Medicine</span></a>
+                                            </li>
+                                            <li><a href="#"><i
+                                                        class="fa-solid fa-wand-magic-sparkles"></i><span>Beauty</span></a>
+                                            </li>
+                                            <li><a href="#"><i class="fa-solid fa-car"></i><span>Car Rental</span></a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </div>
+                                </span>
                                 <button class="custom-btn btn-lg rounded-pill"
-                                    style="width:180px; height: 53px; font-size:17px; margin-right:8px; float:right;"
+                                    style="width: 114px; height: 55px; font-size:17px; float:right;"
                                     type="button"><strong>Search</strong></button>
                             </div>
                         </form>
@@ -194,41 +218,65 @@
     </div> <!--welcome page end -->
 
     <!-- buttons start -->
-    <div class="buttons container d-flex flex-wrap flex-column flex-sm-row pb-5 mb-md-3 mt-5 mb-5">
-        <a class="options" href="">
-            <div class="icons bg-faded-accent text-accent rounded-circle me-2" style="background-color:#ebe2f7;">
-                <i class="fa-solid fa-bed" style="color: #8868e8;"></i>
+    <div class="buttons container d-flex flex-wrap flex-column flex-sm-row pb-5 mb-md-3 mt-5 mb-5" style="gap:20px;">
+        <div class="options" href="">
+            <div class="icons bg-one-opacity me-2">
+                <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#6a39c6"
+                        d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z" />
+                </svg>
             </div>
-            <h3 class="icon-box-title fs-sm ps-1 pe-2 mb-0" style=" display: inline;"><strong>Accommodation</strong>
-            </h3>
-        </a>
+            <div class="icon-box-title fs-sm ps-1 pe-2 mb-0" style=" display: inline;"><strong>Accommodation</strong>
+            </div>
+        </div>
         <a class="options" href="">
-            <div class="icons bg-faded-accent text-accent rounded-circle me-2" style="background-color:#f8fadd;">
-                <i class="fa-solid fa-utensils" style="color: #FFD43B;"></i>
+            <div class="icons bg-second-opacity rounded-circle me-2">
+                <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#f4c74e"
+                        d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z" />
+                </svg>
             </div>
             <h3 class="icon-box-title fs-sm ps-1 pe-2 mb-0"><strong>Food & Drink</strong></h3>
         </a>
         <a class="options" href="">
-            <div class="icons bg-faded-accent text-accent rounded-circle me-2" style="background-color:#ffe2d6;">
-                <i class="fa-solid fa-bag-shopping" style="color: #ff6c0a;"></i>
+            <div class="icons bg-third-opacity rounded-circle me-2">
+                <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#f9622f"
+                        d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                </svg>
             </div>
             <h3 class="icon-box-title fs-sm ps-1 pe-2 mb-0"><strong>Shopping</strong></h3>
         </a>
         <a class="options" href="">
-            <div class="icons bg-faded-accent text-accent rounded-circle me-2" style="background-color:#d4fdca;">
-                <i class="fa-solid fa-landmark" style="color: #38d652;"></i>
+            <div class="icons bg-fourth-opacity me-2">
+                <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#5ee538"
+                        d="M240.1 4.2c9.8-5.6 21.9-5.6 31.8 0l171.8 98.1L448 104l0 .9 47.9 27.4c12.6 7.2 18.8 22 15.1 36s-16.4 23.8-30.9 23.8H32c-14.5 0-27.2-9.8-30.9-23.8s2.5-28.8 15.1-36L64 104.9V104l4.4-1.6L240.1 4.2zM64 224h64V416h40V224h64V416h48V224h64V416h40V224h64V420.3c.6 .3 1.2 .7 1.8 1.1l48 32c11.7 7.8 17 22.4 12.9 35.9S494.1 512 480 512H32c-14.1 0-26.5-9.2-30.6-22.7s1.1-28.1 12.9-35.9l48-32c.6-.4 1.2-.7 1.8-1.1V224z" />
+                </svg>
             </div>
             <h3 class="icon-box-title fs-sm ps-1 pe-2 mb-0"><strong>Art & History</strong></h3>
         </a>
         <a class="options" href="">
-            <div class="icons bg-faded-accent text-accent rounded-circle me-2" style="background-color:#ffddd9;">
-                <i class="fa-solid fa-ticket" style="color:#ff6c0a ;"></i>
+            <div class="icons bg-fifth-opacity me-2">
+                <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#ff7024"
+                        d="M64 64C28.7 64 0 92.7 0 128v64c0 8.8 7.4 15.7 15.7 18.6C34.5 217.1 48 235 48 256s-13.5 38.9-32.3 45.4C7.4 304.3 0 311.2 0 320v64c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V320c0-8.8-7.4-15.7-15.7-18.6C541.5 294.9 528 277 528 256s13.5-38.9 32.3-45.4c8.3-2.9 15.7-9.8 15.7-18.6V128c0-35.3-28.7-64-64-64H64zm64 112l0 160c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H144c-8.8 0-16 7.2-16 16zM96 160c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V160z" />
+                </svg>
             </div>
             <h3 class="icon-box-title fs-sm ps-1 pe-2 mb-0"><strong>Entertainment</strong></h3>
         </a>
         <a class="options" href="">
-            <div class="icons bg-faded-accent text-accent rounded-circle me-2" style="background-color:#c4d9fe;">
-                <i class="fa-solid fa-ellipsis" style="color: #3a76df;"></i>
+            <div class="icons  bg-sixth-opacity me-2">
+                <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#4377d0"
+                        d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z" />
+                </svg>
             </div>
             <h3 class="icon-box-title fs-sm ps-1 pe-2 mb-0"><strong>More</strong></h3>
         </a>
@@ -237,115 +285,81 @@
 
     <!-- Where to stay in Berlin part start -->
     <div class="container">
-        <div class="row col-md-12 mb-5">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="head mb-2 mt-3">
-                    <h3 style="margin-left: 20px; margin-bottom: 18px;"><strong>Where to stay in Berlin</strong></h3>
-                    <div class="link-and-icon">
-                        <a class="btn btn-link fw-normal ms-sm-3 p-0" href="">View all<i class="fa-solid fa-arrow-right"
-                                style="color: #434546;"></i>
-                        </a>
+        <div class="row mb-5 mt-4">
+            <div class="head mb-3">
+                <h3 style="margin-bottom: 18px;"><strong> Where to stay in Berlin </strong></h3>
+                <div class="link-and-icon">
+                    <a class="btn btn-link fw-normal ms-sm-3 p-0" href="">View all<i
+                            class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="where-stay-item mb-4">
+                <div class="where-stay-box">
+                    <div class="position-relative">
+                        <div class="heart-icon-button">
+                            <svg style="width:15px; height:15px;" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#f45510"
+                                    d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                            </svg>
+                        </div>
+                        <img width="100%" src="./images/01.jpg" alt="First slide">
+                    </div>
+                    <h5 class="mt-3"><b>Berlin Business Hotel</b></h5>
+                    <div class="d-flex">
+                        <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>5.0</strong><span
+                                style="margin-left:3px;color: #8a8893;">(48)</span>
+                        </p>
+                        <p><i class="fa-solid fa-money-check-dollar" style="color:#a9a6ae;"></i>$$</p>
+                        <p><i class="fa-solid fa-location-dot" style="color: #bbb7c3;"></i>
+                            1.4 km from
+                            center</p>
                     </div>
                 </div>
-
-                <div class="carousel-inner mb-4">
-                    <div class="where-stay-item">
-                        <div class="where-stay-box col-md-4">
-                            <div class="position-relative">
-                                <button
-                                    class="custom-button btn-xs position-absolute rounded-circle top-0 end-0 m-2 zindex-5"
-                                    type="button" data-bs-toggle="tooltip" data-bs-placement="left"
-                                    aria-label="Add to Favorites" data-bs-original-title="Add to Favorites"><i
-                                        class="fa-regular fa-heart d-flex" style="color: #fd5631 ;"></i>
-                                </button>
-                            </div>
-                            <img style="width:420px; height:200px;" src="./images/01.jpg" alt="First slide">
-                            <h5>Big Tree Cottage</h5>
-                            <div class="d-flex">
-                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>4.8</strong>(24)
-                                </p>
-                                <p><i class="fa-solid fa-money-check-dollar" style="color:#a9a6ae;"></i>$$$</p>
-                                <p><i class="fa-solid fa-location-dot" style="color: #a9a6ae;"></i>0.5 km from
-                                    center</p>
-                            </div>
+                <div class="where-stay-box">
+                    <div class="position-relative">
+                        <div class="heart-icon-button">
+                            <svg style="width:15px; height:15px;" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#f45510"
+                                    d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                            </svg>
                         </div>
-
-                        <div class="where-stay-box col-md-4">
-                            <div>
-                                <img style="width:420px; height:200px;" src="./images/03.jpg" alt="First slide">
-                                <button
-                                    class="custom-button btn-xs position-relative rounded-circle top-0 end-0 m-2 zindex-5"
-                                    type="button" data-bs-toggle="tooltip" data-bs-placement="left"
-                                    aria-label="Add to Favorites" data-bs-original-title="Add to Favorites">
-                                    <i class="fa-regular fa-heart" style="color: #fd5631;"></i>
-                                </button>
-                            </div>
-
-                            <h5>Big Tree Cottage</h5>
-                            <div class="d-flex">
-                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>4.8</strong>(24)
-                                </p>
-                                <p><i class="fa-solid fa-money-check-dollar" style="color:#a9a6ae;"></i>$$$</p>
-                                <p><i class="fa-solid fa-location-dot" style="color: #a9a6ae;"></i>0.5 km from
-                                    center</p>
-                            </div>
-                        </div>
-
-                        <div class="where-stay-box col-md-4">
-                            <div class="position-relative">
-                                <button
-                                    class="custom-button btn-xs position-absolute rounded-circle top-0 end-0 m-2 zindex-5"
-                                    type="button" data-bs-toggle="tooltip" data-bs-placement="left"
-                                    aria-label="Add to Favorites" data-bs-original-title="Add to Favorites"><i
-                                        class="fa-regular fa-heart d-flex" style="color: #fd5631 ;"></i>
-                                </button>
-                            </div>
-                            <img style="width:420px; height:200px;" src="./images/03.jpg" alt="First slide">
-                            <h5>Big Tree Cottage</h5>
-                            <div class="d-flex">
-                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>4.8</strong>(24)
-                                </p>
-                                <p><i class="fa-solid fa-money-check-dollar" style="color:#a9a6ae;"></i>$$$</p>
-                                <p><i class="fa-solid fa-location-dot" style="color: #a9a6ae;"></i>0.5 km from
-                                    center</p>
-                            </div>
-                        </div>
-
-                        <div class="where-stay-box col-md-4">
-                            <div class="position-relative">
-                                <button
-                                    class="custom-button btn-xs position-absolute rounded-circle top-0 end-0 m-2 zindex-5"
-                                    type="button" data-bs-toggle="tooltip" data-bs-placement="left"
-                                    aria-label="Add to Favorites" data-bs-original-title="Add to Favorites"><i
-                                        class="fa-regular fa-heart d-flex" style="color: #fd5631 ;"></i>
-                                </button>
-                            </div>
-                            <img style="width:420px; height:200px;" src="./images/04.jpg" alt="First slide">
-                            <h5>Big Tree Cottage</h5>
-                            <div class="d-flex">
-                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>4.8</strong>(24)
-                                </p>
-                                <p><i class="fa-solid fa-money-check-dollar" style="color:#a9a6ae;"></i>$$$</p>
-                                <p><i class="fa-solid fa-location-dot" style="color: #a9a6ae;"></i>0.5 km from
-                                    center</p>
-                            </div>
-                        </div>
-
+                        <img width="100%" src="./images/02.jpg" alt="First slide">
+                    </div>
+                    <h5 class="mt-3"><b>Big Tree Cottage</b></h5>
+                    <div class="d-flex">
+                        <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>4.8</strong><span
+                                style="margin-left:3px;color: #8a8893;">(24)</span>
+                        </p>
+                        <p><i class="fa-solid fa-money-check-dollar" style="color:#a9a6ae;"></i>$$$</p>
+                        <p><i class="fa-solid fa-location-dot" style="color: #bbb7c3;"></i>0.5 km from
+                            center</p>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="where-stay-box">
+                    <div class="position-relative">
+                        <div class="heart-icon-button">
+                            <svg style="width:15px; height:15px;" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#f45510"
+                                    d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                            </svg>
+                        </div>
+                        <img width="100%" src="./images/03.jpg" alt="First slide">
+                    </div>
+                    <h5 class="mt-3"><b>Grand Resort & Spa</b></h5>
+                    <div class="d-flex">
+                        <p><strong><i class="fa-solid fa-star"
+                                    style="color: #ffb638;font-size:14px;"></i>4.9</strong><span
+                                style="margin-left:3px;color: #8a8893;">(43)</span>
+                        </p>
+                        <p><i class="fa-solid fa-money-check-dollar" style="color:#a9a6ae;"></i>$$$</p>
+                        <p><i class="fa-solid fa-location-dot" style="color: #bbb7c3;"></i>1.8 km from
+                            center</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -355,15 +369,15 @@
     <div class="container">
         <div class="row mt-5 mb-5">
             <!-- Sol sütun -->
-            <div class="col-md-4 six-part-left p-3" style="width:410px;height:440px;">
+            <div class="col-md-4 six-part-left p-3" style="width:420px;height:435px;">
                 <div class="row" style="margin-top:20px;">
                     <div>
-                        <h3 style="color: #fd5631; display: inline; font-size: 35px; margin-left: 20px;">
-                            <i class="fa-solid fa-phone-volume" style="color: #fd5631;font-size:27px;"></i>
+                        <h3 style="color: #fd5631; display: inline; font-size: 33px; margin-left: 20px;">
+                            <i class="fa-solid fa-phone-volume" style="color: #fd5631;font-size:25px;"></i>
                             <strong>Taxi</strong>
                         </h3>
-                        <h3 style="display: inline; font-size: 35px;"><strong>488</strong> </h3>
-                        <p style="color: #7c7f85; font-size:19px; margin-top: 20px; margin-left: 20px;">The
+                        <h3 style="display: inline; font-size: 33px;"><strong>488</strong> </h3>
+                        <p style="color: #6f7176; font-size:19px; margin-top: 20px; margin-left: 20px;">The
                             best way to get
                             wherever <br> you're going!</p>
                     </div>
@@ -375,12 +389,11 @@
             <!-- Sağ sütun -->
             <div class="six-part-right col-md-8">
                 <div class="row eats">
-
                     <div class="head mb-3">
                         <h3 style="margin-left: 20px; margin-bottom: 18px;"><strong>Where to eat</strong></h3>
                         <div class="link-and-icon">
                             <a class="btn btn-link fw-normal ms-sm-3 p-0" href="">View all<i
-                                    class="fa-solid fa-arrow-right" style="color: #434546;"></i>
+                                    class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -389,9 +402,11 @@
                             <div class="col-md-4">
                                 <img src="images/1.svg" alt="Resim 1">
                             </div>
-                            <div class="col-md-6">
-                                <h5 style="color: #3b3749;">Pina Pizza Restaurant</h5>
-                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>5.0</strong>(48)
+                            <div class="restaurants col-md-6">
+
+                                <h5>Pina Pizza Restaurant</h5>
+                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>5.0</strong><span
+                                        style="margin-left:3px;color: #8a8893;">(48)</span>
                                 </p>
                                 <p><i class="fa-solid fa-money-check-dollar" style="color: #a9a6ae;"></i>$$</p>
                                 <p><i class="fa-solid fa-location-dot" style="color: #a9a6ae;"></i>1.4 km from
@@ -402,12 +417,13 @@
                             <div class="col-md-4">
                                 <img src="images/2.svg" alt="Resim 2">
                             </div>
-                            <div class="col-md-6">
-                                <h5 style="color: #3b3749;">KFC</h5>
-                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>5.0</strong>(48)
+                            <div class="restaurants col-md-6">
+                                <h5>KFC</h5>
+                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>4.0</strong><span
+                                        style="margin-left:3px;color: #8a8893;">(18)</span>
                                 </p>
                                 <p><i class="fa-solid fa-money-check-dollar" style="color:  #a9a6ae;"></i>$$</p>
-                                <p><i class="fa-solid fa-location-dot" style="color:  #a9a6ae;"></i>1.4 km from
+                                <p><i class="fa-solid fa-location-dot" style="color:  #a9a6ae;"></i>1.2 km from
                                     center</p>
                             </div>
                         </div>
@@ -415,10 +431,11 @@
                             <div class="col-md-4">
                                 <img src="images/3.svg" alt="Resim 3">
                             </div>
-                            <div class="col-md-6 eats">
-                                <h5 style="color: #3b3749;">Yum Restaurant</h5>
-                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>4.6</strong>(48)</p>
-                                <p><i class="fa-solid fa-money-check-dollar" style="color:#a9a6ae;"></i>$$</p>
+                            <div class="restaurants col-md-6">
+                                <h5>Yum Restaurant</h5>
+                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>4.6</strong><span
+                                        style="margin-left:3px;color: #8a8893;">(26)</span></p>
+                                <p><i class="fa-solid fa-money-check-dollar" style="color:#a9a6ae;"></i>$</p>
                                 <p><i class="fa-solid fa-location-dot" style="color: #a9a6ae;"></i>2.4 km from
                                     center
                                 </p>
@@ -430,9 +447,11 @@
                             <div class="col-md-4">
                                 <img src="images/4.svg" alt="Resim 4">
                             </div>
-                            <div class="col-md-6">
-                                <h5 style="color: #3b3749;">Tosaka Sushi Bar</h5>
-                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>4.2</strong>(28)</p>
+                            <div class="restaurants col-md-6">
+                                <h5>Tosaka Sushi Bar</h5>
+                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>4.2</strong><span
+                                        style="margin-left:3px;color: #8a8893;"><span
+                                            style="margin-left:3px;color: #8a8893;">(34)</span></span></p>
                                 <p><i class="fa-solid fa-money-check-dollar" style="color: #a9a6ae;"></i>$$$</p>
                                 <p><i class="fa-solid fa-location-dot" style="color: #a9a6ae;"></i>2.5 km from
                                     center
@@ -443,9 +462,10 @@
                             <div class="col-md-4">
                                 <img src="images/5.svg" alt="Resim 5">
                             </div>
-                            <div class="col-md-6">
-                                <h5 style="color: #3b3749;">Dunkin' Donuts</h5>
-                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>5.0</strong>(43)</p>
+                            <div class="restaurants col-md-6">
+                                <h5>Dunkin' Donuts</h5>
+                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>5.0</strong><span
+                                        style="margin-left:3px;color: #8a8893;">(43)</span></p>
                                 <p><i class="fa-solid fa-money-check-dollar" style="color:  #a9a6ae;"></i>$</p>
                                 <p><i class="fa-solid fa-location-dot" style="color: #a9a6ae;"></i>1.8 km from
                                     center
@@ -456,9 +476,10 @@
                             <div class="col-md-4">
                                 <img src="images/6.svg" alt="Resim 6">
                             </div>
-                            <div class="col-md-6">
-                                <h5 style="color: #3b3749;">Spicy Bar-Restaurant</h5>
-                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>5.0</strong>(32)</p>
+                            <div class="restaurants col-md-6">
+                                <h5>Spicy Bar-Restaurant</h5>
+                                <p><strong><i class="fa-solid fa-star" style="color: #ffb638;"></i>5.0</strong><span
+                                        style="margin-left:3px;color: #8a8893;">(32)</span></p>
                                 <p><i class="fa-solid fa-money-check-dollar" style="color: #a9a6ae;"></i>$$$</p>
                                 <p><i class="fa-solid fa-location-dot" style="color: #a9a6ae;"></i>0.5 km from
                                     center
@@ -486,8 +507,8 @@
                     <button class="seven-button">Tomorrow</button>
                     <button class="seven-button">This weekend</button>
                     <div class="link-and-icon">
-                        <a class="btn btn-link fw-normal ms-sm-3 p-0" href="">View all<i class="fa-solid fa-arrow-right"
-                                style="color: #434546;"></i>
+                        <a class="btn btn-link fw-normal ms-sm-3 p-0" href="">View all<i
+                                class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -508,22 +529,22 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/match.webp" class="d-block" alt="...">
+                        <img src="images/holifest.jpg" class="d-block" alt="...">
                         <div class="carousel-caption">
                             <div style="float: left;">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <div class="upcoming-icon">
                                         <i class="fa-solid fa-calendar-days"
-                                            style="color: #c9cbcf; margin-bottom:16px; margin-right:10px;"></i>
-                                        <p>No 11</p>
+                                            style=" margin-bottom:16px; margin-right:10px;"></i>
+                                        <p>Dec 2</p>
                                     </div>
                                     <div class="upcoming-icon" style="margin-left: 30px;">
                                         <i class="fa-regular fa-clock"
-                                            style="color:#c9cbcf; margin-bottom:16px; margin-right:10px;"></i>
-                                        <p>18:00</p>
+                                            style=" margin-bottom:16px; margin-right:10px;"></i>
+                                        <p>10:00</p>
                                     </div>
                                 </div>
-                                <h6>Football Match</h6>
+                                <h6>Holi Festival</h6>
                             </div>
 
                             <div style="float: right;">
@@ -531,7 +552,7 @@
                                     <div class="upcoming-btn">
                                         <a class="btn rounded-pill rounded-end-0 px-3"
                                             style="color: white; font-size:17px;" href="#">
-                                            <strong>Tickets from $50</strong>
+                                            <strong>Tickets from $35</strong>
                                         </a>
                                         <a class="rounded-start-0 px-3" type="button">
                                             <i class="fa-regular fa-heart" style="color: #ffffff; font-size:16px;"></i>
@@ -543,22 +564,22 @@
                     </div>
 
                     <div class="carousel-item">
-                        <img src="images/match.webp" class="d-block" alt="...">
+                        <img src="images/concer.jpg" class="d-block" alt="...">
                         <div class="carousel-caption">
                             <div style="float: left;">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <div class="upcoming-icon">
                                         <i class="fa-solid fa-calendar-days"
-                                            style="color: #c9cbcf; margin-bottom:16px; margin-right:10px;"></i>
-                                        <p>No 11</p>
+                                            style=" margin-bottom:16px; margin-right:10px;"></i>
+                                        <p>Nov 15</p>
                                     </div>
                                     <div class="upcoming-icon" style="margin-left: 30px;">
                                         <i class="fa-regular fa-clock"
-                                            style="color:#c9cbcf; margin-bottom:16px; margin-right:10px;"></i>
-                                        <p>18:00</p>
+                                            style=" margin-bottom:16px; margin-right:10px;"></i>
+                                        <p>21:00</p>
                                     </div>
                                 </div>
-                                <h6>Football Match</h6>
+                                <h6>Simon Rock Concert</h6>
                             </div>
 
                             <div style="float: right;">
@@ -583,12 +604,12 @@
                                 <div class="d-flex justify-content-center align-items-center">
                                     <div class="upcoming-icon">
                                         <i class="fa-solid fa-calendar-days"
-                                            style="color: #c9cbcf; margin-bottom:16px; margin-right:10px;"></i>
+                                            style=" margin-bottom:16px; margin-right:10px;"></i>
                                         <p>No 11</p>
                                     </div>
                                     <div class="upcoming-icon" style="margin-left: 30px;">
                                         <i class="fa-regular fa-clock"
-                                            style="color:#c9cbcf; margin-bottom:16px; margin-right:10px;"></i>
+                                            style="margin-bottom:16px; margin-right:10px;"></i>
                                         <p>18:00</p>
                                     </div>
                                 </div>
@@ -600,7 +621,7 @@
                                     <div class="upcoming-btn">
                                         <a class="btn rounded-pill rounded-end-0 px-3"
                                             style="color: white; font-size:17px;" href="#">
-                                            <strong>Tickets from $50</strong>
+                                            <strong>Tickets from $40</strong>
                                         </a>
                                         <a class="heart-btn rounded-start-0 px-3" type="button">
                                             <i class="fa-regular fa-heart" style="color: #ffffff; font-size:16px;"></i>
@@ -639,16 +660,16 @@
                         <img src="images/lunapark.jpg" alt="">
                     </div>
                     <div class="col-md-5">
-                        <h4>Amusement Park</h4>
+                        <p style="font-size:24px;color: #3b3b3b;"><b>Amusement Park</b></p>
                         <div style="margin-top: 15px;margin-bottom:10px;">
                             <p class="lunapark-p"><i class="fa-solid fa-location-dot"
-                                    style="color: #a9a6ae; margin-right:5px;"></i>Ollenhauer Str.29,10118
+                                    style="color: #a9a6ae; margin:5px 8px 5px 10px;"></i>Ollenhauer Str.29,10118
                             </p>
                             <p class="lunapark-p"><i class="fa-regular fa-clock"
-                                    style="color: #a9a6ae; margin-right:5px;"></i>9:00 - 23:00
+                                    style="color: #a9a6ae;  margin:5px 8px 5px 10px;"></i>9:00 - 23:00
                             </p>
                             <p class="lunapark-p"><i class="fa-solid fa-money-bill"
-                                    style="color:#a9a6ae; margin-right:5px;"></i>$$</p>
+                                    style="color:#a9a6ae;  margin:5px 8px 5px 10px;"></i>$$</p>
                         </div>
                         <p style="color: #6b6978;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
                             commodi, asperiores sit
@@ -750,8 +771,7 @@
         <div class=" head mt-3 mb-4">
             <h3 class="head-two"><strong>You may be also interested in</strong></h3>
             <div class="link-and-icon">
-                <a class="btn btn-link fw-normal ms-sm-3 p-0" href="">Go to blog<i class="fa-solid fa-arrow-right"
-                        style="color: #a9a6ae;"></i>
+                <a class="btn btn-link fw-normal ms-sm-3 p-0" href="">Go to blog<i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -764,7 +784,7 @@
                             src="images/plane.jpg" alt="Post image"></a><a
                         class="fs-xs text-uppercase text-decoration-none" style="color: #ff6d29; font-size:13px;"
                         href="#">Travelling</a>
-                    <p class="pt-1"><a href="city-guide-blog-single.html" style="color:#454056;"><b>Air Travel
+                    <p class="pt-1"><a href="city-guide-blog-single.html"><b>Air Travel
                                 in the Time of
                                 COVID-19</b></a></p><a class="d-flex align-items-center text-decoration-none"
                         href="#"><img class="rounded-circle loaded" src="images/bessie.png" width="38" alt="Avatar">
@@ -781,13 +801,13 @@
                 </article>
             </div>
 
-            <div class="col-4 article">
+            <div class="article col-4">
                 <article class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1"><a class="d-block mb-3"
                         href="city-guide-blog-single.html"><img class="rounded-3 loaded tns-complete"
                             src="images/woman.jpg" alt="Post image"></a><a
                         class="fs-xs text-uppercase text-decoration-none" style="color: #ff6d29; font-size:13px;"
                         href="#">Entertainment</a>
-                    <p class="pt-1"><a href="city-guide-blog-single.html" style="color:#454056;"><b>10
+                    <p class="pt-1"><a href="city-guide-blog-single.html"><b>10
                                 World-Class Museums You
                                 Can Visit Online</b></a></p><a class="d-flex align-items-center text-decoration-none"
                         href="#"><img class="rounded-circle loaded" src="images/annette.png" width="38" alt="Avatar">
@@ -810,7 +830,7 @@
                             src="images/desert.jpg" alt="Post image"></a><a
                         class="fs-xs text-uppercase text-decoration-none" style="color: #ff6d29; font-size:13px;"
                         href="#">Travelling</a>
-                    <p class="pt-1"><a href="city-guide-blog-single.html" style="color:#454056;"><b>7 Tips for
+                    <p class="pt-1"><a href="city-guide-blog-single.html"><b>7 Tips for
                                 Solo Travelers
                                 in Africe</b></a></p><a class="d-flex align-items-center text-decoration-none"
                         href="#"><img class="rounded-circle loaded" src="images/ralph.png" width="38" alt="Avatar">
