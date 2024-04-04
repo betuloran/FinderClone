@@ -7,35 +7,13 @@
     background-color: white;
 }
 
-/*  page start */
-.welcome-page-form {
-    display: flex;
-    align-items: center;
-}
-
 .welcome-page-img img {
     width: 750px;
 
 }
 
-.footer a {
-    font-family: "Noto Sans", sans-serif;
-}
-
-.mx-auto {
-    margin-right: auto !important;
-    margin-left: auto !important;
-}
-
 .d-block {
     display: block !important;
-}
-
-.welcome-page-input {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
 }
 
 .upcoming-carousel {
@@ -43,6 +21,50 @@
     justify-content: center;
 }
 
+.carousel-inner img {
+    width: 850px;
+    height: 340px;
+    border-radius: 10px;
+}
+
+.upcoming-icon i {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.carousel-caption {
+    font-weight: bold;
+}
+
+.upcoming-btn:hover {
+    box-shadow: 2px 2px 2px rgb(239, 147, 127);
+    /* Üzerine gelindiğinde daha belirgin bir gölgelendirme */
+    background-color: #fd390e;
+}
+
+.upcoming-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #fd5631;
+    border-radius: 20px;
+    width: 220px;
+    height: 40px;
+    transition: linear .2s all;
+}
+
+.upcoming-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upcoming-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .form-group {
     display: flex;
@@ -55,34 +77,10 @@
     box-shadow: 0 0.125rem 0.125rem -0.125rem rgba(31, 27, 45, .08), 0 0.25rem 0.75rem rgba(31, 27, 45, .08);
 }
 
-.search-button {
-    border-radius: 50px;
-    border: #a5a3a3;
-    width: 600px;
-    height: 70px;
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(149, 148, 148, 0.967);
-}
-
-.search-button button {
-    float: right;
-
-}
-
-.search-button {
-    text-align: left;
-
-}
-
-/*  page finish */
-
-/* buttons start */
-
-
 .options {
     color: #1f1b2d;
     border-radius: 50px;
-    width:max-content;
+    width: max-content;
     /* Kenarları yuvarlaklaştır */
     height: 65px;
     border: 2px solid #ffffff;
@@ -95,9 +93,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:10px;
+    padding: 10px;
 }
 
+.options .icons {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+}
 
 .icon-box-title {
     font-size: 14px;
@@ -106,70 +112,89 @@
     color: #373639;
 }
 
-.options .icons{
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:45px; height:45px;
-}
-
-.bg-one-opacity{
+.bg-one-opacity {
     background: rgba(93, 60, 242, 0.2);
     transition: linear .2s all;
-}.bg-second-opacity{
+}
+
+.bg-second-opacity {
     background: rgba(255, 221, 2, 0.2);
     transition: linear .2s all;
-}.bg-third-opacity{
+}
+
+.bg-third-opacity {
     background: rgba(253, 144, 80, 0.2);
     transition: linear .2s all;
-}.bg-fourth-opacity{
+}
+
+.bg-fourth-opacity {
     background: rgba(83, 255, 49, 0.2);
     transition: linear .2s all;
-}.bg-fifth-opacity{
+}
+
+.bg-fifth-opacity {
     background: rgba(253, 144, 80, 0.2);
-     transition: linear .2s all;
-}.bg-sixth-opacity{
+    transition: linear .2s all;
+}
+
+.bg-sixth-opacity {
     background: rgba(29, 108, 255, 0.2);
-     transition: linear .2s all;
+    transition: linear .2s all;
 }
 
-.options:hover .icons.bg-one-opacity{
-    background:rgba(85, 55, 220, 1);
-    transition: linear .2s all; 
-}
-.options:hover .icons.bg-second-opacity{
-    background:rgba(255, 229, 36, 1);
-    transition: linear .2s all; 
-}.options:hover .icons.bg-third-opacity{
-    background:rgba(255, 132, 31, 1);
-    transition: linear .2s all; 
-}.options:hover .icons.bg-fourth-opacity{
-    background:rgba(22, 244, 26, 1);
-    transition: linear .2s all; 
-}.options:hover .icons.bg-fifth-opacity{
-    background:rgba(255, 132, 31, 1);
-    transition: linear .2s all; 
-}.options:hover .icons.bg-sixth-opacity{
-    background:rgba(56, 122, 255, 1);
-    transition: linear .2s all; 
+.options:hover .icons.bg-one-opacity {
+    background: rgba(85, 55, 220, 1);
+    transition: linear .2s all;
 }
 
-.options:hover .icons svg path{
+.options:hover .icons.bg-second-opacity {
+    background: rgba(255, 229, 36, 1);
+    transition: linear .2s all;
+}
+
+.options:hover .icons.bg-third-opacity {
+    background: rgba(255, 132, 31, 1);
+    transition: linear .2s all;
+}
+
+.options:hover .icons.bg-fourth-opacity {
+    background: rgba(22, 244, 26, 1);
+    transition: linear .2s all;
+}
+
+.options:hover .icons.bg-fifth-opacity {
+    background: rgba(255, 132, 31, 1);
+    transition: linear .2s all;
+}
+
+.options:hover .icons.bg-sixth-opacity {
+    background: rgba(56, 122, 255, 1);
+    transition: linear .2s all;
+}
+
+.options:hover .icons svg path {
     fill: white;
 }
-.options .icons .icon-svg{
-    width:23px;
+
+.options .icons .icon-svg {
+    width: 23px;
     height: 23px;
+}
+
+.options:hover {
+    box-shadow: 3px 3px 5px rgba(136, 136, 136, 0.3);
+    /* Hafif gölge */
 }
 
 .where-stay-item {
     display: flex;
-    gap:25px;  
+    gap: 25px;
 }
+
 .where-stay-box img {
-border-radius:12px;
+    border-radius: 12px;
 }
+
 .where-stay-box h5 {
     margin-top: 10px;
     font-size: 18px;
@@ -181,57 +206,39 @@ border-radius:12px;
     color: #fd390e;
     transition: linear .2s color;
 }
-.heart-icon-button{
+
+.heart-icon-button {
     position: absolute;
-    right:10px;
+    right: 10px;
     top: 15px;
-    width:30px;
+    width: 30px;
     height: 30px;
-    background:white;
-    display:flex;
+    background: white;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
 }
 
 .where-stay-box {
-  width:100%;
-}
-.heart-icon-button{
-    background: rgb(255, 255, 255);
-     transition: linear .2s all;
-     width:30px;
-     height: 30px;
+    width: 100%;
 }
 
-.heart-icon-button:hover{
-    background:rgb(248, 87, 7);
-    transition: linear .2s all; 
+.heart-icon-button {
+    background: rgb(255, 255, 255);
+    transition: linear .2s all;
+    width: 30px;
+    height: 30px;
 }
-.heart-icon-button:hover svg path{
+
+.heart-icon-button:hover {
+    background: rgb(248, 87, 7);
+    transition: linear .2s all;
+}
+
+.heart-icon-button:hover svg path {
     fill: white;
 }
-
-/* buttons finish */
-
-/* carousel */
-
-.carousel-inner img{
-    width:850px;
-    height: 340px;
-    border-radius: 10px;
-}
-.upcoming-icon i{
-   color: #ffffff;
-   font-weight: bold;
-}
-.carousel-caption {
-    font-weight: bold;
- }
- .upcoming-btn{
-transition: linear .2s all;
- }
-/* carousel */
 
 .btn-market {
     border-radius: 7px;
@@ -263,24 +270,15 @@ transition: linear .2s all;
     /* SVG ile metin arasında boşluk bırak */
 }
 
-.svg-icon {
-    width: 20px;
-    height: 20px;
-}
-
 .custom-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     color: white;
     background-color: #fd5631;
-    border-radius: 20px;
+    border-radius: 30px;
     border: none;
     transition: linear .2s all;
-}
-
-.footer-icon {
-    background-color: #431ecb;
 }
 
 .custom-btn:hover {
@@ -289,42 +287,6 @@ transition: linear .2s all;
     background-color: #fd390e;
     transition: linear .1s all;
 
-}
-
-.upcoming-btn:hover {
-    box-shadow: 2px 2px 2px rgb(239, 147, 127);
-    /* Üzerine gelindiğinde daha belirgin bir gölgelendirme */
-    background-color: #fd390e;
-}
-
-.upcoming-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: #fd5631;
-    border-radius: 20px;
-    width: 220px;
-    height: 40px;
-}
-
-.upcoming-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.sign-in {
-    font-family: "Noto Sans", sans-serif;
-    margin-left: auto;
-}
-
-.sign-in button {
-    height: 38px;
-    width: 145px;
-    margin: 10px;
-    font-size: 15px;
 }
 
 .custom-btn i {
@@ -340,25 +302,28 @@ transition: linear .2s all;
     justify-content: center;
     cursor: pointer;
 }
-.sub-menu{
+
+.sub-menu {
     border: solid 1px #e6e4e4;
     border-radius: 12px;
-   width: max-content;
-   padding:15px 30px 15px 10px;
+    width: max-content;
+    padding: 15px 30px 15px 10px;
     display: none;
     /* Elementi başlangıçta gizle */
     position: absolute;
     box-shadow: 0px 0px 5px 3px rgba(230, 226, 226, 0.5);
     font-size: 14px;
     background-color: white;
-    transition: linear .5s all; 
+    transition: linear .5s all;
 }
+
 .menu:hover .sub-menu {
     display: block;
     /* Fare menünün üzerine geldiğinde elementi göster */
     top: 60px;
     transition: linear .5s all;
 }
+
 .menu .sub-menu ul li {
     list-style-type: none;
     color: #4d4848;
@@ -370,7 +335,8 @@ transition: linear .2s all;
     transition: linear .2s all;
     cursor: pointer;
 }
-.menu .sub-menu ul{
+
+.menu .sub-menu ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -378,38 +344,29 @@ transition: linear .2s all;
     gap: 10px;
 }
 
-.all-categories-dropdown .dropdown-menu i{
-    color:#bec3c7;
-    margin:10px;
-}
-.all-categories-dropdown .dropdown-menu a{
-    color:black;
-  font-size: 14px;
-}
-.all-categories-dropdown .dropdown-menu a:hover{
-    color:#ff6c0a;
+.all-categories-dropdown .dropdown-menu i {
+    color: #bec3c7;
+    margin: 10px;
 }
 
-.all-categories-dropdown .dropdown-menu i:hover{
-    color:#ff6c0a;
+.all-categories-dropdown .dropdown-menu a {
+    color: black;
+    font-size: 14px;
 }
 
-.all-categories-dropdown .dropdown-menu{
-   border-radius: 13px;
-   width:100px;
-   box-shadow: 0 0 5px rgba(139, 138, 138, 0.3);
-   border: transparent;
+.all-categories-dropdown .dropdown-menu a:hover {
+    color: #ff6c0a;
 }
 
-.five-part svg, .seven-part svg {
-    width: 18px;
-    margin-left: 10px;
+.all-categories-dropdown .dropdown-menu i:hover {
+    color: #ff6c0a;
 }
 
-.five-right,
-.seven-right {
-    display: flex;
-    justify-content: flex-end;
+.all-categories-dropdown .dropdown-menu {
+    border-radius: 13px;
+    width: 100px;
+    box-shadow: 0 0 5px rgba(139, 138, 138, 0.3);
+    border: transparent;
 }
 
 .six-part-left {
@@ -435,28 +392,28 @@ transition: linear .2s all;
     cursor: pointer;
 }
 
-.restaurants h5{
+.restaurants h5 {
     color: #47464c;
     transition: linear .2s all;
     font-size: 19px;
 }
 
-.restaurants h5:hover{
-    color: #fd5631; 
+.restaurants h5:hover {
+    color: #fd5631;
     cursor: pointer;
     transition: linear .2s all;
 }
 
-.article .pt-1 a{
+.article .pt-1 a {
     color: #454056;
     transition: linear .2s all;
 }
 
-.article .pt-1 a:hover{
+.article .pt-1 a:hover {
     color: #fd5631;
     transition: linear .2s all;
     cursor: pointer;
-    
+
 }
 
 .lunapark-p {
@@ -465,7 +422,6 @@ transition: linear .2s all;
     font-size: 15px;
     color: #6b6978;
 }
-
 
 .where-stay-box p {
     margin-top: 0;
@@ -550,12 +506,6 @@ transition: linear .2s all;
     /* Hafif gölge */
 }
 
-.upcoming-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .choose-date button {
     width: 190px;
     height: 35px;
@@ -583,7 +533,8 @@ transition: linear .2s all;
     align-items: center;
     transition: linear .2s all;
 }
-.seven-button:hover{
+
+.seven-button:hover {
     box-shadow: 0px 8px 15px rgba(7, 7, 7, 0.1);
     /* Yavaş yavaş görünen gölge efekti */
     transition: box-shadow 0.3s ease;
@@ -594,7 +545,6 @@ a {
     text-decoration: none !important;
 
 }
-
 
 .eight-part {
     background-color: #e8e4f5;
@@ -619,16 +569,11 @@ a {
     border-radius: 10px;
 }
 
-.nav-link-light {
-    color: white;
-}
-
 .bg-transparent {
     background-color: rgba(255, 255, 255, 0);
     /* Arka planı tamamen saydam yap */
     border: 1px solid rgba(255, 255, 255, 0);
 }
-
 
 .tns-complete {
     height: 190px;
@@ -647,6 +592,9 @@ a {
     border-top: 1px solid rgba(185, 185, 185, 0.303);
 }
 
+.footer a {
+    font-family: "Noto Sans", sans-serif;
+}
 
 .nav-link-light {
     color: #888595;
@@ -655,6 +603,19 @@ a {
 .nav-link-light:hover {
     color: #ffffff;
 }
+
 input {
-    outline:none;
-   }
+    outline: none;
+}
+
+.sign-in {
+    font-family: "Noto Sans", sans-serif;
+    margin-left: auto;
+}
+
+.sign-in button {
+    height: 38px;
+    width: 145px;
+    margin: 10px;
+    font-size: 15px;
+}
