@@ -1,8 +1,8 @@
-# Finder Site
+## Finder Site
 
-### This project is a clone project developed using HTML, CSS and Bootstrap that offers suggestions for staying, eating, shopping or visiting the city chosen by the user.
+#### This project is a clone project developed using HTML, CSS and Bootstrap that offers suggestions for staying, eating, shopping or visiting the city chosen by the user.
 
-## Screenshots
+### Screenshots
 ![Ekran Görüntüsü (114)](https://github.com/betuloran/FinderSite/assets/116026974/7893aa24-574c-4770-a39d-153663f41d49)
 
 ![Ekran Görüntüsü (115)](https://github.com/betuloran/FinderSite/assets/116026974/78edb5bd-c06e-4a9d-99dd-1b1d8df96e66)
